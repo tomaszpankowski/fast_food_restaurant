@@ -1,0 +1,225 @@
+.minh{ 
+    &-auto{
+        min-height: auto;
+    }
+    &-fit{
+        min-height: fit-content;
+    }
+    &-25vh{
+        min-height: 25vh;
+    }
+    &-50vh{
+        min-height: 50vh;
+    }
+    &-75vh{
+        min-height: 75vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+    &-200{
+        min-height: 200px;
+    }
+    &-300{
+        min-height: 300px;
+    }
+    &-400{
+        min-height: 400px;
+    }
+    &-500{
+        min-height: 500px;
+    }
+    &-600{
+        min-height: 600px;
+    }
+}
+
+@media all and (min-width: 576px){
+    .minh-sm{
+        &-auto{
+            min-height: auto;
+        }
+        &-fit{
+            min-height: fit-content;
+        }
+        &-25vh{
+            min-height: 25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
+        &-200{
+            min-height: 200px;
+        }
+        &-300{
+            min-height: 300px;
+        }
+        &-400{
+            min-height: 400px;
+        }
+        &-500{
+            min-height: 500px;
+        }
+        &-600{
+            min-height: 600px;
+        }        
+    }
+}
+
+@media all and (min-width: 768px){
+    .minh-md{
+        &-auto{
+            min-height: auto;
+        }
+        &-fit{
+            min-height: fit-content;
+        }
+        &-25vh{
+            min-height: 25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
+        &-200{
+            min-height: 200px;
+        }
+        &-300{
+            min-height: 300px;
+        }
+        &-400{
+            min-height: 400px;
+        }
+        &-500{
+            min-height: 500px;
+        }
+        &-600{
+            min-height: 600px;
+        }        
+    }
+}
+
+@media all and (min-width: 992px){
+    .minh-lg{
+        &-auto{
+            min-height: auto;
+        }
+        &-fit{
+            min-height: fit-content;
+        }
+        &-25vh{
+            min-height: 25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
+        &-200{
+            min-height: 200px;
+        }
+        &-300{
+            min-height: 300px;
+        }
+        &-400{
+            min-height: 400px;
+        }
+        &-500{
+            min-height: 500px;
+        }
+        &-600{
+            min-height: 600px;
+        }        
+    }
+}
+
+@media all and (min-width: 1200px){
+    .minh-xl{
+        &-auto{
+            min-height: auto;
+        }
+        &-fit{
+            min-height: fit-content;
+        }
+        &-25vh{
+            min-height: 25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
+        &-200{
+            min-height: 200px;
+        }
+        &-300{
+            min-height: 300px;
+        }
+        &-400{
+            min-height: 400px;
+        }
+        &-500{
+            min-height: 500px;
+        }
+        &-600{
+            min-height: 600px;
+        }        
+    }
+}
+
+@media all and (min-width: 1400px){
+    .minh-xxl{
+        &-auto{
+            min-height: auto;
+        }
+        &-fit{
+            min-height: fit-content;
+        }
+        &-25vh{
+            min-height: 25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
+        &-200{
+            min-height: 200px;
+        }
+        &-300{
+            min-height: 300px;
+        }
+        &-400{
+            min-height: 400px;
+        }
+        &-500{
+            min-height: 500px;
+        }
+        &-600{
+            min-height: 600px;        
+        }
+    }
+}
