@@ -1,3 +1,5 @@
+@include aoa-bg-series($bg__classes,$bg__aoa);
+
 .text{
     &-shadow{
         text-shadow: $text-shadow;

@@ -555,7 +555,34 @@ body, html {
   opacity: 0.9;
 }
 
-/* line 2, ../sass/partials/_modules_init.scss */
+/* line 31, ../sass/partials/_mixins.scss */
+.comingsoon-s1 {
+  background-attachment: fixed;
+  background-image: url(../img/coming.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.error-s1 {
+  background-attachment: fixed;
+  background-image: url(../img/error.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.privacy-s1 {
+  background-attachment: fixed;
+  background-image: url(../img/privacy.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 4, ../sass/partials/_modules_init.scss */
 .text-shadow {
   text-shadow: 1px 1px 3px #333;
 }
