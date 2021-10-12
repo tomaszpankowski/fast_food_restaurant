@@ -1,2 +1,13 @@
+$bg__classes:
+    "comingsoon",
+    "error",
+    "privacy";
+$bg__comingsoon-img: "../img/coming.jpg";
+$bg__error-img: "../img/error.jpg";
+$bg__privacy-img: "../img/privacy.jpg";
+$bg__aoa:
+    $bg__comingsoon-img,
+    $bg__error-img,
+    $bg__privacy-img;
 $color__shadow: #333;
 $text-shadow: 1px 1px 3px $color__shadow; 
