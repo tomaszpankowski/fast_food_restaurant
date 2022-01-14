@@ -1,0 +1,57 @@
+.about{
+    &-s2{
+        background-position: center !important;
+    }
+}
+.bg{
+    &-red{
+        background-color: $color__red;
+    }
+}
+.index{
+    &-s1{
+        background-color: #aaa !important;
+        background-blend-mode: multiply;
+    }
+}
+.offer{
+    &-s1,&-s3{
+        background-color: #aaa !important;
+        background-blend-mode: multiply;
+    }
+}
+footer{
+    @include set-background($bg__footer-img);
+    background-blend-mode: color;
+}
+textarea{
+    resize:none;
+}
+
+@media all and (max-width:767px){
+    .about,.contact{
+        &-s1,&-s2,&-s3{
+            background-color: #aaa !important;
+            background-blend-mode: multiply;        
+        }
+    }
+    .contact{
+        &-s1{
+            background-position: right !important;
+        }
+    }
+    .index,.offer,.login{
+        &-s1{
+            background-color: #888 !important;
+            background-blend-mode: multiply;
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #333;
+            border:1px solid #555;
+            opacity: 0.8;
+            padding-right: 10px;
+        }
+    }
+}
