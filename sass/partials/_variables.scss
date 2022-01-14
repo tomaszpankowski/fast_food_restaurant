@@ -1,13 +1,38 @@
 $bg__classes:
+    "about",
     "comingsoon",
+    "contact",
     "error",
+    "index",
+    "login",
+    "offer",
     "privacy";
+$bg__about-img: 
+    "../img/about/about_s1.jpg",
+    "../img/about/about_s2.jpg";
 $bg__comingsoon-img: "../img/coming.jpg";
+$bg__contact-img: 
+    "../img/contact/contact_s1.jpg",
+    "../img/contact/contact_s2.jpg",
+    "../img/contact/contact_s3.jpg";
 $bg__error-img: "../img/error.jpg";
+$bg__footer-img: "../img/footer_bg.jpg";
+$bg__index-img: "../img/index/index_s1.jpg";
+$bg__login-img: "../img/contact/contact_s3.jpg";
+$bg__offer-img: 
+    "../img/offer/offer_s1.jpg",
+    "",
+    "../img/offer/offer_s3.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
 $bg__aoa:
+    $bg__about-img,
     $bg__comingsoon-img,
+    $bg__contact-img,
     $bg__error-img,
+    $bg__index-img,
+    $bg__login-img,
+    $bg__offer-img,
     $bg__privacy-img;
+$color__red: #721818;
 $color__shadow: #333;
 $text-shadow: 1px 1px 3px $color__shadow; 

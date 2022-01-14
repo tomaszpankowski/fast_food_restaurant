@@ -35,7 +35,7 @@
     }
 }
 
-@mixin aoa-bg-series($classArrayA:'',$imgAoA:'',$imgURL:0,$positionA:"top left",$sizeA:"cover",$attachA:"fixed"){
+@mixin aoa-bg-series($classArrayA:'',$imgAoA:'',$imgURL:0,$positionA:"top left",$sizeA:"cover",$attachA:"scroll"){
     @if (length($classArrayA) == length($imgAoA)){
         @for $i from 1 through length($classArrayA){
             @include set-bg-series(nth($classArrayA,$i),nth($imgAoA,$i),$imgURL,$positionA,$sizeA,$attachA);
