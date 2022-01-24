@@ -1,3 +1,15 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if(!isset($_SESSION["errorMessage"])){
+    $_SESSION["errorMessage"] = "Unfortunately your message was not send due to technical ";
+    $_SESSION["errorMessage"] .= "problems. Please try again later or contact with us by phone.";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,9 +20,9 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="icon" href="img/favicon.png"/>
-        <title> | Login</title>
+        <title>Fast Food | Message not sent</title>
     </head>
-    <body class="minh-100vh">
+    <body class="minh-100vh bg-secondary">
         <header class="position-absolute w-100">
             <nav class="navbar navbar-dark navbar-expand-md bg-transparent">
                 <a href="index.html" class="navbar-brand ms-3">
@@ -42,51 +54,22 @@
                 </div>
             </nav>
         </header>
-        <main>            
-            <section class="login-s1 container-fluid d-flex align-items-center bg-secondary py-5 minh-100vh">
-                <div class="row mx-0 w-100 pt-5 mt-5">
-                    <div class="col-11 col-sm-8 col-md-6 col-lg-4 col-xxl-3 mx-auto">
-                        <div class="card bg-red opacity-8">
-                            <div class="card-header">
-                                <h6 class="text-white text-uppercase my-1">
-                                    Login
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <form class="text-start px-3">
-                                    <div class="form-group mb-3">
-                                        <label class="text-white text-shadow mb-2 ms-1">Login</label>
-                                        <input class="form-control rounded-pill" 
-                                            type="text" 
-                                            name="flogin" 
-                                            placeholder="User login"
-                                            maxlength="80"/>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-white text-shadow mb-2 ms-1">Password</label>
-                                        <input class="form-control rounded-pill" 
-                                            type="text" 
-                                            name="fpassword" 
-                                            placeholder="Enter password"
-                                            maxlength="80"/>
-                                    </div>
-                                    <div class="w-100 small border-bottom">
-                                        <p class="text-white">
-                                            Not registered? Register
-                                            <a href="register.html" class="fw-bold text-decoration-none text-white">Now</a>
-                                        </p>
-                                    </div>
-                                    <div class="w-100 text-end py-3">
-                                        <input type="reset" class="btn btn-outline-light rounded-pill me-1" value="Clear"/>
-                                        <input type="submit" class="btn btn-outline-light rounded-pill" value="Login"/>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+        <section class="login-s1 container-fluid d-flex align-items-center bg-secondary py-5 minh-100vh">
+            <div class="row mx-0 w-100 pt-5 mt-5">
+                <div class="col-10 col-sm-8 col-md-6 offset-1 offset-sm-2 offset-md-3 text-center">
+                    <div class="alert alert-danger">
+                        <h3 class="text-center font-header">Error!</h3>
+                        <p class="initialism">
+                            <?php
+                                echo $_SESSION["errorMessage"];
+                            ?>
+                        </p>                  
+                        <a href="contact.html" 
+                            class="btn btn-danger">Back</a>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>    
         <footer class="container-fluid d-flex text-dark align-items-center bg-dark text-white pt-3 opacity-9 border-top">
             <div class="row mx-0 w-100 small opacity-9">
                 <div class="col-12 col-md-6 col-lg-5 text-center text-md-start">
@@ -130,3 +113,10 @@
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
+<?php $_SESSION["errorMessage"]=null ?>
+
+        
+  
+        
+
+
