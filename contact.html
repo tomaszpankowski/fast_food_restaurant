@@ -34,7 +34,7 @@
                             <a href="contact.html" class="nav-link text-white">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="login.html" class="nav-link text-white">
+                            <a href="user.php" class="nav-link text-white">
                                 <span class="fa fa-user"></span>
                             </a>
                         </li>
@@ -89,12 +89,15 @@
                         </h2>
                     </div>
                     <div class="col-12 col-sm-9 col-md-7 col-lg-6 p-3 mx-auto text-center">
-                        <form class="text-start">
+                        <form class="text-start"
+                            autocomplete="off"
+                            method="POST"
+                            action="message.php">
                             <div class="form-group mb-2">
                                 <label class="text-white text-shadow mb-2">First name</label>
                                 <input class="form-control" 
                                     type="text" 
-                                    name="ffirstname" 
+                                    name="fname" 
                                     placeholder="Enter first name"
                                     maxlength="80"/>
                             </div>
@@ -102,7 +105,7 @@
                                 <label class="text-white text-shadow mb-2">Last name</label>
                                 <input class="form-control" 
                                     type="text" 
-                                    name="flastname" 
+                                    name="flast" 
                                     placeholder="Enter last name"
                                     maxlength="80"/>
                             </div>
@@ -124,7 +127,7 @@
                             </div>
                             <div class="form-group mb-2">
                                 <label class="text-white text-shadow mb-2">Message</label>
-                                <textarea class="form-control" name="fsmg" maxlength="150" placeholder="Enter your message"></textarea>
+                                <textarea class="form-control" name="fmsg" maxlength="150" placeholder="Enter your message"></textarea>
                             </div>
                             <div class="w-100 text-center py-3">
                                 <input type="reset" class="btn btn-outline-light rounded-pill" value="Clear"/>
